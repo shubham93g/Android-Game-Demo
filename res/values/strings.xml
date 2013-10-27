@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">The URECA Game</string>
+    <string name="menu_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_story_preview">StoryPreview</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="story">In a galaxy far far away….</string>
+    <string name="title_activity_level_panel">LevelPanel</string>
+    <string name="title_activity_frame_v2">FrameV2</string>
+
+</resources>
