@@ -27,7 +27,7 @@
             android:label="@string/title_activity_level_panel" >
         </activity>
         <activity
-            android:name="com.example.theurecagame.FrameV2Activity"
+            android:name="com.example.theurecagame.Level2Activity"
             android:label="@string/title_activity_frame_v2" >
         </activity>
     </application>

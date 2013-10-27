@@ -103,7 +103,7 @@ public class Ball {
 	 }
 	 
 	 public boolean isTouched(int xInput, int yInput, Frame frame){
-		 if(
+		 if( //ball is touched
 				 (frame.get_xPixel() + frame.get_xPixelOffset() + this.xPixel <= xInput) &&
 				 (xInput < frame.get_xPixel() + frame.get_xPixelOffset() + this.xPixel + this.bitmap.getWidth()) &&
 				 (frame.get_yPixel() + frame.get_yPixelOffset() + this.yPixel <= yInput) &&

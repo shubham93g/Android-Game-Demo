@@ -3,6 +3,7 @@ package com.example.theurecagame;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 
+//Heads Up Display class
 public class HUD {
 	
 	int xPixel;
@@ -19,7 +20,6 @@ public class HUD {
 		xPixel = 0;
 		yPixel = 0;
 		startTime = System.currentTimeMillis();
-		
 		
 	}
 	

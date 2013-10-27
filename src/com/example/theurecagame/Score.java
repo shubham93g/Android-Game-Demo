@@ -1,10 +1,9 @@
 package com.example.theurecagame;
 
+//class to manage the scoring system
 public class Score {
 	private int currentScore; //total points
 	private int previousPositivePoint;
-	//private int currentPoint; //point given
-	//private int previousNegativePoint; //to be implemented later
 	private int previousColor;
 	private long previousPopTime;
 	private int popCount;

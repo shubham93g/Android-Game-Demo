@@ -6,18 +6,20 @@ import android.view.Menu;
 import android.view.Window;
 import android.view.WindowManager;
 
+//activity for the main game
 public class StartGameActivity extends Activity {
 	private Frame frame;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		//initialize the game frame
 		frame = new Frame(1,this,4,4);
-		 requestWindowFeature(Window.FEATURE_NO_TITLE);
-	        // making it full screen
-	     getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-	        // setting LevelPanel as the view
-	     
+		//remove title from screen
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+        // making it full screen
+		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        // setting game frame as the view 
 		setContentView(frame);
 	}
 

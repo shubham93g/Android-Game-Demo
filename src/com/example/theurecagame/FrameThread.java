@@ -5,7 +5,7 @@ import android.util.Log;
 import android.view.SurfaceHolder;
 
 public class FrameThread extends Thread{
-	// Surface holder that can access the physical surface
+				// Surface holder that can access the physical surface
 				private SurfaceHolder surfaceHolder;
 				// The actual view that handles inputs
 				// and draws to the surface

@@ -6,17 +6,19 @@ import android.view.Menu;
 import android.view.Window;
 import android.view.WindowManager;
 
-public class FrameV2Activity extends Activity {
+//activity for level 2
+public class Level2Activity extends Activity {
 	private Frame frame;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		//initialize the frame for level 2
 		frame = new Frame(2,this,3,3);
 		 requestWindowFeature(Window.FEATURE_NO_TITLE);
 	        // making it full screen
 	     getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-	        // setting LevelPanel as the view
+	        // setting game frame as the view
 	     
 		setContentView(frame);
 	}

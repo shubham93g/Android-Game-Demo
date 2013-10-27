@@ -43,6 +43,7 @@ public class Frame extends SurfaceView implements SurfaceHolder.Callback{
 	private int balls;
 	private int level;
 
+	//create frame with the level number and by specifying the dimensions of the ball array
 	public Frame(int level, Context context, int xNum, int yNum){
 		super(context);
 		getHolder().addCallback(this);
@@ -122,6 +123,7 @@ public class Frame extends SurfaceView implements SurfaceHolder.Callback{
 		}
 	}
 	
+	//select bitmap based on the color
 	public void selectBitmap(Ball ball){
 		switch(ball.get_color()){
 		case 0: ball.set_bitmap(BitmapFactory.decodeResource(getResources(), R.drawable.red));
@@ -251,7 +253,7 @@ public class Frame extends SurfaceView implements SurfaceHolder.Callback{
                 public void onClick(DialogInterface dialog, int id) {
                 	if(level==1)
                 	{
-                	Intent intent = new Intent(getContext(), FrameV2Activity.class);
+                	Intent intent = new Intent(getContext(), Level2Activity.class);
                     Log.d("URECA", "Level 2 starting : ");
                     ((Activity)getContext()).startActivity(intent);
                     ((Activity)getContext()).finish();
@@ -276,6 +278,7 @@ public class Frame extends SurfaceView implements SurfaceHolder.Callback{
 		return super.onTouchEvent(event);
 	}
 	
+	//update fram location based on ball speed
 	public void updateFrameLocation(){
 		xPixelOffset += speed.get_xSpeed()*speed.get_xDirection();
 		yPixelOffset += speed.get_xSpeed()*speed.get_yDirection();
