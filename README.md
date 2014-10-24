@@ -8,4 +8,4 @@ Game Includes
 3. Touch based input
 4. Collision detection
 
-To see a working demo please see : http://youtu.be/z8S-TD4U6is
+To see a working demo please see : https://www.youtube.com/watch?v=J30ggTJIkLY
